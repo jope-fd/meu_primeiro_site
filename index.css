@@ -1,5 +1,14 @@
+*, *:before, *:after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #d5d5d4;
+}
+h1, h2 {
+    color: #444c4a;
+    font-family: 'Cinzel', serif;
 }
 p {
     text-align: justify;
@@ -7,7 +16,104 @@ p {
     font-family: 'Cormorant Garamond', serif;
     font-size: 16pt;
 }
-h1, h2 {
-    color: #444c4a;
-    font-family: 'Cinzel', serif;
+a {
+    color: black;
+    text-decoration: none;    
 }
+.content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transition: all ease-in-out .3s;
+}
+.inner_content {
+    width: 90%;
+    max-width: 50em;
+    margin: 96px auto 480px auto;
+}
+section {
+    margin-bottom: 64px;
+}
+.sidebar_is_active .content {
+    right: 280px;
+    left: -280px;
+}
+@media screen and (min-width: 70em) {
+    .sidebar_is_active .content {
+        right: 400px;
+        left: -400px;
+        padding-left: 400px;
+    }
+}
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 128px 0 inset rgba(128,128,128,.2);
+}
+@media screen and (min-width: 70em) {
+    .sidebar {
+        width: 400px;
+    }
+}
+.navigation {
+    margin: 96px 32px;
+}
+.navigation ul{
+    border-top: 3px solid black;
+}
+.navigation ul li {
+    list-style: none;
+}
+.navigation ul li a {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 3px solid black;
+}
+.navigation_trigger {
+    position: fixed;
+    z-index: 3;
+    top: 32 px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+}
+.navigation_trigger:hover {
+    cursor: pointer;
+}
+.navigaton-trigger .line {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    transition: transform .3s;    
+}
+.navigation_trigger .line1 {
+    top: 10px;
+}
+.navigation_trigger .line2 {
+    top: 18px;
+}
+.sidebar_is_active .navagation_trigger .line1 {
+    top: 14px;
+    transform: rotate(45deg);
+}
+.sidebar_is_active .navigation_trigger .line2 {
+    top: 14px;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
