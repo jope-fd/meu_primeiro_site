@@ -1,5 +1,5 @@
 body {
-    background-image: url("/images/suabiaalva.jpg");
+    background-image: url("./images/suabiaalva.jpg");
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
@@ -16,8 +16,7 @@ header {
 }
 
 .background-text {
-    background-color: #ffffff;
-    
+    background-color: #ffffff;    
     max-width: 900px;
     height: auto;
     padding: 10px;
