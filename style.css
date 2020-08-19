@@ -1,0 +1,41 @@
+body {
+    background-image: url("/images/suabiaalva.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+header {
+    width: auto;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-text {
+    background-color: #ffffff;
+    
+    max-width: 900px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    align-items: center;
+    
+}
+section {
+    margin: 35px;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;        
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16pt;
+}
+h1, h2 {
+    color: #444c4a;
+    font-family: 'Cinzel', serif;
+}
