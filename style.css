@@ -1,11 +1,12 @@
 body {
+    margin: 0px;
     background-image: url("./images/suabiaalva.jpg");
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
-    
+    overflow-x:hidden
 }
 header {
     width: auto;
@@ -13,6 +14,10 @@ header {
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+header >img {
+    margin: 10px;
 }
 
 .background-text {
@@ -37,4 +42,21 @@ p {
 h1, h2 {
     color: #444c4a;
     font-family: 'Cinzel', serif;
+}
+
+
+@media (max-width: 1000px) { 
+    .background-text {
+        display: block;
+        max-width: 100vw;
+        margin-top: 10px;
+        margin: 0px;
+
+    }
+    p, blockquote{
+        font-size: 1rem;
+    }
+    h1, h2 {
+        font-size: 0.9rem;
+    }
 }
