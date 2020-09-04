@@ -42,7 +42,7 @@ p {
 	font: 1.6vw "Cormorant Garamond", serif;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
 	.background-text {
 		display: block;
 		max-width: 100vw;
@@ -56,4 +56,4 @@ p {
 	h2 {
 		font-size: 0.9rem;
 	}
-} */
+}
